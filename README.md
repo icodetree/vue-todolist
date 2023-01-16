@@ -1,2 +1,2 @@
 # vue-todolist
-vue basic todo-list
+Vue-basic todo-list
