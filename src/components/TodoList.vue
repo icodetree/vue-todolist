@@ -64,6 +64,7 @@ li {
   color: #62acde;
   margin-right: 5px;
 }
+
 .removeBtn {
   margin-left: auto;
   color: #de4343;
