@@ -5,13 +5,9 @@
 </template>
 <script>
 export default {
-  setup() {},
-  created() {},
-  mounted() {},
-  unmounted() {},
   methods: {
     clearTodo() {
-      localStorage.clear();
+      this.$emit("removeAll");
     },
   },
 };
