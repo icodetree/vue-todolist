@@ -10,7 +10,7 @@
       <font-awesome-icon icon="fa-solid fa-plus" class="addBtn" />
     </span>
 
-    <!-- 경고팝업
+    <!-- 알림팝업
     <modal v-if="showModal" @close="showModal = false">
       <slot name="header">
         <h3>알림</h3>
