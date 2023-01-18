@@ -9,11 +9,24 @@
     <span class="addContainer" v-on:click="addTodo">
       <font-awesome-icon icon="fa-solid fa-plus" class="addBtn" />
     </span>
+
+    <!-- 경고팝업
+    <modal v-if="showModal" @close="showModal = false">
+      <slot name="header">
+        <h3>알림</h3>
+      </slot>
+      <slot name="footer" @click="showModal = false">
+        <span>
+          할 일을 입력하세요!
+          <font-awesome-icon icon="closeModalBtn fa-solid fa-xmark" />
+        </span>
+      </slot>
+    </modal> -->
   </div>
 </template>
 <script>
 export default {
-  components: {},
+  props: ["propsdata"],
   data() {
     return {
       newTodoItem: "",
@@ -32,6 +45,7 @@ export default {
       this.newTodoItem = "";
     },
   },
+  components: {},
 };
 </script>
 <style scoped>

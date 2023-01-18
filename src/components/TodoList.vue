@@ -10,7 +10,7 @@ export default {
 </script>
 <template>
   <section>
-    <ul>
+    <transition-group name="list" tag="ul">
       <li
         v-for="(todoItem, index) in propsdata"
         v-bind:key="todoItem"
@@ -26,7 +26,7 @@ export default {
           <font-awesome-icon icon="fa-regular fa-trash-can" />
         </span>
       </li>
-    </ul>
+    </transition-group>
   </section>
 </template>
 <style scoped>
@@ -56,5 +56,16 @@ li {
 .removeBtn {
   margin-left: auto;
   color: #de4343;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 1s;
+}
+
+.list-enter,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
 }
 </style>
