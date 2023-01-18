@@ -17,7 +17,7 @@
       </slot>
       <slot name="footer" @click="showModal = false">
         <span>
-          할 일을 입력하세요!
+          할 일을 입력해주세요!
           <font-awesome-icon icon="closeModalBtn fa-solid fa-xmark" />
         </span>
       </slot>
