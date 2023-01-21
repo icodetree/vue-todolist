@@ -2,7 +2,7 @@
 
 ## vue3
 
-vue3 버전에서 slot 이슈
+vue3 버전에서 slot 이슈..
 
 ## Project setup
 
